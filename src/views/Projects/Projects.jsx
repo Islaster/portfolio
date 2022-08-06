@@ -1,6 +1,7 @@
 import Header from "../../components/Header";
 import { useEffect, useState } from "react";
 import Project from "../../components/Projects/project";
+import Banner from "../../components/Carousel/Banner";
 
 export default function Projects() {
   let [projects, setProjects] = useState(null);
@@ -12,6 +13,7 @@ export default function Projects() {
   return (
     <div>
       <Header />
+      <Banner />
       {projects ? (
         projects.map((element, key) => <Project project={element} idx={key} />)
       ) : (

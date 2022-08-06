@@ -1,6 +1,5 @@
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import "./particle.css";
 
 export default function Particle() {
   const particlesInit = async (main) => {
@@ -12,17 +11,13 @@ export default function Particle() {
   };
   return (
     <div>
-      <div className="Welcome">
-        <h1>Hi, I'm Isaac</h1>
-        <h4>A Full-Stack Developer</h4>
-      </div>
       <Particles
         id="tsparticles"
         init={particlesInit}
         options={{
           fullScreen: {
             enable: true,
-            zIndex: 1,
+            zIndex: -10,
           },
           particles: {
             number: {

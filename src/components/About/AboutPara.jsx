@@ -1,4 +1,5 @@
 import "./AboutPara.css";
+
 export default function AboutPara() {
   return (
     <div className="d-flex justify-content-center">

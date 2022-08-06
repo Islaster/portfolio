@@ -1,0 +1,8 @@
+.welcome {
+  padding-top: 25vh;
+  color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
