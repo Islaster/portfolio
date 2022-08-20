@@ -1,24 +1,28 @@
-import Header from "../../components/Header";
-import { useEffect, useState } from "react";
-import Project from "../../components/Projects/project";
-import Banner from "../../components/Carousel/Banner";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "./Project.css";
 
 export default function Projects() {
-  let [projects, setProjects] = useState(null);
-  useEffect(() => {
-    fetch("https://api.github.com/users/islaster/repos")
-      .then((response) => response.json())
-      .then((data) => setProjects(data));
-  }, []);
   return (
-    <div>
-      <Header />
-      <Banner />
-      {projects ? (
-        projects.map((element, key) => <Project project={element} idx={key} />)
-      ) : (
-        <></>
-      )}
+    <div className="websites">
+      <Container>
+        <Row>
+          <Col>
+            <a href="https://blog-about-nothing.herokuapp.com/">
+              <img
+                src="/images/carousel/blog-about-nothing.png"
+                alt="blog about nothing"
+              />
+            </a>
+          </Col>
+          <Col>
+            <a href="https://sleepy-journey-76294.herokuapp.com/">
+              <img src="/images/carousel/gamestore.png" alt="gamestore" />
+            </a>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }

@@ -1,0 +1,13 @@
+.skills {
+  text-align: center;
+  font-size: 5vh;
+  color: aqua;
+}
+.mainHeader {
+  padding-bottom: 2vh;
+  text-decoration: underline;
+}
+
+.techHeader {
+  padding-bottom: 1vh;
+}
