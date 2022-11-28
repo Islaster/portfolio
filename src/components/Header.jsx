@@ -8,7 +8,7 @@ import "./Header.css";
 export default function Header() {
   return (
     <>
-      <Navbar bg="secondary" className="nav-gradient" expand="lg">
+      <Navbar bg="secondary" className="nav-gradient" expand="lg" sticky="top">
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand className="brand">Isaac</Navbar.Brand>

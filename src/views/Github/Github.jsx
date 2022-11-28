@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Project from "../../components/Projects/project";
+import Project from "../../components/Project/Project";
 import Banner from "../../components/Carousel/Banner";
 
 export default function Projects() {
