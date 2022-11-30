@@ -12,6 +12,7 @@ export default function Contact() {
         rel="noreferrer"
         variant="dark"
         size="lg"
+        id="contact"
       >
         <AiOutlineMail />
         Contact

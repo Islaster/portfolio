@@ -6,3 +6,11 @@
   align-items: center;
   justify-items: center;
 }
+
+.bottom {
+  margin-top: 35vh;
+}
+.lanchor:link {
+  color: white;
+  text-decoration: none;
+}

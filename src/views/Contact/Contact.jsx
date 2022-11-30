@@ -4,6 +4,7 @@ import Col from "react-bootstrap/Col";
 import "./Contact.css";
 import { BsInstagram, BsGithub } from "react-icons/bs";
 import { AiFillLinkedin } from "react-icons/ai";
+import Button from "react-bootstrap/Button";
 
 export default function Contact() {
   return (
@@ -18,21 +19,26 @@ export default function Contact() {
           <Col>(812)318-2870</Col>
           <Col>Isaac.Laster812@outlook.com</Col>
           <Col>
-            <a
+            <Button
               href="https://www.instagram.com/nexus_orgin/?hl=en"
               className="socials"
             >
+              Instagram
               <BsInstagram />
-            </a>
-            <a
+            </Button>
+            <br />
+            <Button
               href="https://www.linkedin.com/in/isaaclaster/"
               className="socials"
             >
+              LinkedIn
               <AiFillLinkedin />
-            </a>
-            <a href="https://github.com/Islaster" className="socials">
+            </Button>
+            <br />
+            <Button href="https://github.com/Islaster" className="socials">
+              Github
               <BsGithub />
-            </a>
+            </Button>
           </Col>
         </Row>
       </Container>

@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
+import { BsInstagram, BsGithub } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 import "./Header.css";
 
 export default function Header() {
@@ -30,6 +32,21 @@ export default function Header() {
                 Contact Me
               </Nav.Link>
             </LinkContainer>
+            <a
+              href="https://www.instagram.com/nexus_orgin/?hl=en"
+              className="socials"
+            >
+              <BsInstagram style={{ color: "black" }} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/isaaclaster/"
+              className="socials"
+            >
+              <AiFillLinkedin style={{ color: "black" }} />
+            </a>
+            <a href="https://github.com/Islaster" className="socials">
+              <BsGithub style={{ color: "black" }} />
+            </a>
           </Nav>
         </Container>
       </Navbar>
