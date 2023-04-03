@@ -6,7 +6,7 @@ export default function Banner() {
     <div>
       <div className="container-fluid">
         <div className="row">
-          <div className="col-12">
+          <div className="col-7" style={{ margin: "0vh auto" }}>
             <Carousel>
               <Carousel.Item>
                 <img

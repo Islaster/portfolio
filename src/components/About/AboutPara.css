@@ -1,5 +1,12 @@
 .About {
   color: antiquewhite;
-  font-size: large;
+  font-size: 20px;
   padding: 10vh;
+}
+
+@media (max-width: 480px) {
+  .About {
+    font-size: 25px;
+    padding: 15px;
+  }
 }

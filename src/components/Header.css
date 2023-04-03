@@ -1,3 +1,61 @@
 .nav-gradient {
   background-color: linear-gradient(#6c757d, #424649);
 }
+@media (min-width: 1025px) {
+  .brand {
+    margin-right: 350px;
+  }
+  .links {
+    margin-left: 850px;
+  }
+  .links > .link {
+    margin-left: 30px;
+  }
+  .links > .socials {
+    margin-top: 7px;
+  }
+  .socials > .social {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 769px) {
+  .links {
+    margin-left: 350px;
+  }
+  .links > .link {
+    margin-left: 30px;
+  }
+  .links > .socials {
+    margin-top: 5px;
+  }
+}
+@media (min-width: 481px) {
+  .links {
+    margin-left: 250px;
+  }
+  .links > .link {
+    margin-left: 15px;
+  }
+  .links > .socials {
+    margin-top: 8px;
+  }
+  .socials > .social {
+    margin-left: 8px;
+  }
+}
+@media (min-width: 320px) {
+  .links {
+    text-align: center;
+  }
+  .links > .socials {
+    margin-left: -25px;
+  }
+  .socials > .social {
+    text-align: center;
+    margin-left: 20px;
+  }
+  .brand {
+    margin-left: 157px;
+  }
+}

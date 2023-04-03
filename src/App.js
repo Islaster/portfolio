@@ -4,13 +4,13 @@ import Github from "./views/Github/Github";
 import Contact from "./views/Contact/Contact";
 import AboutMe from "./views/AboutMe/AboutMe";
 import Projects from "./views/Projects/Projects";
-import Header from "./components/Header";
 import "./App.css";
+import DeskNav from "./components/winNav";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <DeskNav />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/projects" element={<Projects />} />

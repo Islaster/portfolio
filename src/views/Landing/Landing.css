@@ -1,5 +1,5 @@
 .welcome {
-  padding-top: 25vh;
+  margin-top: 90px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -8,9 +8,17 @@
 }
 
 .bottom {
-  margin-top: 35vh;
+  margin: 35vh auto 0 auto;
+  position: sticky;
 }
 .lanchor:link {
   color: white;
   text-decoration: none;
+  position: sticky;
+}
+@media (min-width: 320px) {
+  .welcome {
+    padding-top: 50px;
+    padding-bottom: 10px;
+  }
 }

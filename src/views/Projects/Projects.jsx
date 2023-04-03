@@ -26,17 +26,12 @@ export default function Projects() {
   return (
     <div className="websites">
       <Container>
-        {arrayChunk(projects, 3).map((row, i) => (
-          <Row key={i}>
-            {row.map((col, i) => (
-              <Col key={i}>
-                <a href={col.url}>
-                  <img src={col.img} alt={col.name} />
-                </a>
-              </Col>
-            ))}
-          </Row>
-        ))}
+        <h1 className="h1-error">404</h1>
+        <br />
+        <p className="P-error">
+          you didnt break the internet, but we can't find what you are looking
+          for.
+        </p>
       </Container>
     </div>
   );

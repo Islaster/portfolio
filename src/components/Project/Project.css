@@ -1,3 +1,21 @@
 .project {
   color: white;
 }
+video {
+  height: 35vh;
+}
+.projectImg {
+  height: 250px;
+}
+@media (min-width: 320px) {
+  .projectImg {
+    height: 150px;
+  }
+  video {
+    height: 150px;
+    margin: 0 auto;
+  }
+  .project {
+    text-align: center;
+  }
+}

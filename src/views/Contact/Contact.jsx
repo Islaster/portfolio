@@ -1,47 +1,17 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./Contact.css";
-import { BsInstagram, BsGithub } from "react-icons/bs";
-import { AiFillLinkedin } from "react-icons/ai";
-import Button from "react-bootstrap/Button";
+import { useState, useEffect } from "react";
+import DeskCon from "../../components/Contact/DeskCon";
+import MobCont from "../../components/Contact/MobCont";
 
 export default function Contact() {
-  return (
-    <div className="d-flex p-2 flex-column ">
-      <Container className="contact">
-        <Row>
-          <Col>Phone</Col>
-          <Col>Email</Col>
-          <Col>Socials</Col>
-        </Row>
-        <Row>
-          <Col>(812)318-2870</Col>
-          <Col>Isaac.Laster812@outlook.com</Col>
-          <Col>
-            <Button
-              href="https://www.instagram.com/nexus_orgin/?hl=en"
-              className="socials"
-            >
-              Instagram
-              <BsInstagram />
-            </Button>
-            <br />
-            <Button
-              href="https://www.linkedin.com/in/isaaclaster/"
-              className="socials"
-            >
-              LinkedIn
-              <AiFillLinkedin />
-            </Button>
-            <br />
-            <Button href="https://github.com/Islaster" className="socials">
-              Github
-              <BsGithub />
-            </Button>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
+  const [width, setWidth] = useState(window.innerWidth);
+  const breakpoint = 480;
+  useEffect(() => {
+    const handleWindowResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleWindowResize);
+
+    // Return a function from the effect that removes the event listener
+    return () => window.removeEventListener("resize", handleWindowResize);
+  }, []);
+  return <>{width > breakpoint ? <DeskCon /> : <MobCont />}</>;
 }
