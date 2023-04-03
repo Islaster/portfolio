@@ -7,14 +7,19 @@ export default function Project({ project }) {
       <p style={{ fontSize: "3vh" }}>{project.name}</p>
       <br />
       {project.type === "video" ? (
-        <video src={project.url} controls />
+        <>
+          <video src={project.url} controls />
+          <br />
+          <p>Tech Stack: {project.tech}</p>
+        </>
       ) : (
-        <img src={project.url} className="projectImg" alt="" />
+        <div className="galleryContainer">
+          <img src={project.url} className="projectImg" alt="" />
+          <div className="galleryOverlay">
+            <p className="text">{project.tech}</p>
+          </div>
+        </div>
       )}
-      <br />
-      <p style={{ fontSize: "4vh" }}>
-        Tech Stack: <br /> {project.tech}
-      </p>
     </div>
   );
 }
