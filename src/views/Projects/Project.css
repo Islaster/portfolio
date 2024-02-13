@@ -1,11 +1,88 @@
-.websites {
-  color: antiquewhite;
+.projects-section {
+  padding: 60px 15px;
+}
+
+.project-card {
+  border: none;
+  border-radius: 8px; /* Soften the corners */
+  overflow: hidden; /* Ensure images fit neatly */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease-in-out, transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* More pronounced shadow on hover */
+}
+
+.project-card img {
+  height: 200px;
+  width: 100%; /* Ensure full width */
+  object-fit: cover; /* Cover ensures the image fully covers the space */
+}
+
+.project-card .card-body {
+  padding: 20px; /* Ample padding for readability */
+  background-color: #ffffff; /* Pure white background for contrast */
+}
+
+.project-card .card-title {
+  margin-bottom: 15px;
+  color: #333; /* Darker text for better readability */
+  font-size: 1.25rem; /* Slightly larger title */
+}
+
+.project-card .btn-primary {
+  background-color: #0056b3; /* Deep blue for professionalism and contrast */
+  border: none;
+  padding: 10px 15px; /* Optimal padding for buttons */
+}
+
+.project-card .btn-primary:hover {
+  background-color: #004094; /* Slightly darker on hover */
+}
+
+@media (max-width: 768px) {
+  .project-card img {
+    height: auto; /* Adjust height on smaller screens for better aspect ratio */
+  }
+}
+.project-card {
+  position: relative;
+  overflow: hidden; /* Ensure that the overlay doesn't exceed the card's bounds */
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75); /* Semi-transparent overlay */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Hide by default */
+  transition: opacity 0.25s ease;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1; /* Show on hover */
+}
+
+.project-tech {
+  margin-bottom: 20px; /* Spacing between tech stack and button */
+}
+
+/* Button inside overlay might need adjustment to match the overlay style */
+.project-overlay .btn-primary {
+  border: none;
+}
+
+/* Ensure text and button are centered and visible */
+.project-overlay .btn-primary,
+.project-overlay .project-tech {
   text-align: center;
-  margin: 20vh auto;
-}
-.h1-error {
-  font-size: 35vh;
-}
-.P-error {
-  font-size: 4vh;
 }

@@ -4,6 +4,7 @@ import Particle from "../../components/Landing/particle/particle";
 import Project from "../../components/Landing/Project/Project";
 import { AiOutlineDownCircle } from "react-icons/ai";
 import "./Landing.css";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 export default function Landing() {
@@ -21,9 +22,11 @@ export default function Landing() {
       <section className="welcome" id="welcome">
         <h1>Hi, I'm Isaac</h1>
         <h4>A Full-Stack Developer</h4>
-        <Button variant="dark" size="lg" href="/about">
-          Learn More
-        </Button>
+        <Link to="/about">
+          <Button variant="dark" size="lg">
+            Learn More
+          </Button>
+        </Link>
         <div className="bottom">
           {width > breakpoint ? (
             <a href="#contact" className="lanchor">

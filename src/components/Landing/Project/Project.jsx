@@ -8,7 +8,7 @@ export default function Project() {
       <br />
       <span>
         <Button href="/source" variant="dark" size="lg" className="space">
-          Github projects
+          Projects
         </Button>
         <Button href="/projects" variant="dark" size="lg" className="space">
           Websites
